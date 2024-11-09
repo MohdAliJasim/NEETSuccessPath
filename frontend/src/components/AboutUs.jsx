@@ -133,7 +133,7 @@ export default function AboutUs() {
           className="mt-12 text-center"
         >
           <motion.p variants={itemVariants} className="text-lg max-w-4xl mx-auto">
-            At NEET Coaching Excellence, we believe in nurturing not just exam-takers, but future medical professionals. Our holistic approach to NEET preparation ensures that you're well-equipped for the challenges of both the examination and your future medical career. Join us and be part of a community that's dedicated to excellence in medical education.
+            At NEET Coaching Excellence, we believe in nurturing not just exam-takers, but future medical professionals. Our holistic approach to NEET preparation ensures that you&apos;re well-equipped for the challenges of both the examination and your future medical career. Join us and be part of a community that&apos;s dedicated to excellence in medical education.
           </motion.p>
         </motion.div>
       </div>

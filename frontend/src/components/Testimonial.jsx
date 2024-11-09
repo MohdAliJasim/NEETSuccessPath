@@ -15,7 +15,7 @@ const testimonials = [
     city: "Delhi"
   },
   {
-    quote: "The practice tests were a game-changer for me. They really prepared me for the actual exam.",
+    quote: "The practice tests were a game changer for me. They really prepared me for the actual exam.",
     name: "Anita Desai",
     city: "Bangalore"
   },
@@ -63,7 +63,7 @@ export default function TestimonialCarousel() {
                 <div className="p-6 relative">
                   <Quote className="absolute top-4 left-4 w-8 h-8 text-primary opacity-20" />
                   <blockquote className="mt-4 text-lg text-gray-700 italic">
-                    "{testimonial.quote}"
+                    {testimonial.quote}
                   </blockquote>
                   <div className="mt-4 flex items-center">
                     <div>

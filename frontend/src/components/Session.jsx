@@ -57,7 +57,7 @@ export default function LearningResources() {
           className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto"
         >
           Explore our wide range of learning resources designed to help you excel in your NEET preparation. 
-          From engaging video lessons to comprehensive study materials and practice tests, we've got you covered.
+          From engaging video lessons to comprehensive study materials and practice tests, we&apos;ve got you covered.
         </motion.p>
         <motion.div
           variants={containerVariants}
