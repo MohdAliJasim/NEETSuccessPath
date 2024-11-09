@@ -6,7 +6,7 @@ import Footer from "../components/Footer.jsx"
 import TestimonialCarousel from "@/components/Testimonial.jsx"
 import MentorCarousel from "../components/Mentor.jsx"
 import LearningResources from "../components/Session.jsx"
-
+import Testing from "../components/Testing.jsx"
 export default function Home() {
   return (
   <>
@@ -18,6 +18,7 @@ export default function Home() {
     <MentorCarousel/>
     <TestimonialCarousel/>
     <Footer/>
+    <Testing/>
   </>
   );
 }
