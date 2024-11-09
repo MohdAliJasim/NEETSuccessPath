@@ -112,9 +112,9 @@ export default function AboutUs() {
                 <span>Personalized mentoring and performance tracking</span>
               </li>
             </motion.ul>
-            <motion.p variants={itemVariants} className="text-lg">
+            {/* <motion.p variants={itemVariants} className="text-lg">
               Our proven methodology and dedicated team of educators have helped thousands of students achieve their goals. We focus not just on exam preparation, but on building a strong foundation in medical sciences that will serve you throughout your career.
-            </motion.p>
+            </motion.p> */}
             <motion.p variants={itemVariants} className="text-lg">
               Join us at NEET Coaching Excellence and take the first step towards your successful medical career.
             </motion.p>
