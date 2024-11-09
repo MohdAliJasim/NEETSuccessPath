@@ -51,7 +51,7 @@ export default function TestimonialCarousel() {
   }
 
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-100 py-12 pt-24 px-4 sm:px-6 lg:px-8" id='testimonial'>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
           What Our Students Say

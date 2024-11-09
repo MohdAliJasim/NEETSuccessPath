@@ -48,7 +48,7 @@ export default function AboutUs() {
   ]
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-24 bg-gray-50" id='aboutus'>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center">About Us</h2>
         <div className="flex flex-col lg:flex-row items-start justify-between space-y-8 lg:space-y-0 lg:space-x-12">

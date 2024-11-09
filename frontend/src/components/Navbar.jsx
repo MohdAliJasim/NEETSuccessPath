@@ -1,40 +1,71 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronDown, Menu, X } from "lucide-react"
 
-
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-
+  const [expandedItems, setExpandedItems] = useState([])
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen)
   }
 
+  const toggleExpanded = (itemName) => {
+    setExpandedItems(prev => 
+      prev.includes(itemName) 
+        ? prev.filter(item => item !== itemName)
+        : [...prev, itemName]
+    )
+  }
+
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Why Choose Us', href: '/why-choose-us' },
+    { name: 'Home', href: '#hero' },
+    { name: 'About Us', href: '#aboutus' },
+    { name: 'Why Choose Us', href: '#whychooseus' },
     { 
       name: 'Learning Sessions', 
-      href: '#',
+      href: '#session',
       dropdown: [
         { name: 'Live Classes', href: '/live-classes' },
         { name: 'Recorded Sessions', href: '/recorded-sessions' },
         { name: 'Study Materials', href: '/study-materials' },
       ]
     },
-    { name: 'Mentors', href: '/mentors' },
+    { name: 'Mentors', href: '#mentor' },
     { name: 'Doubt Clearing', href: '/doubt-clearing' },
-    { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Testimonials', href: '#testimonial' },
     { name: 'Contact Us', href: '/contact' },
   ]
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY
+      const sections = ['hero', 'mentor', 'whychooseus', 'session', 'testimonial', 'aboutus']
+      
+      sections.forEach(section => {
+        const element = document.getElementById(section)
+        if (element) {
+          const { offsetTop, offsetHeight } = element
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            const link = document.querySelector(`a[href="#${section}"]`)
+            if (link) link.classList.add('text-blue-400')
+          } else {
+            const link = document.querySelector(`a[href="#${section}"]`)
+            if (link) link.classList.remove('text-blue-400')
+          }
+        }
+      })
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className="bg-black text-white">
+    <header className="bg-black text-white fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <button className="lg:hidden" onClick={toggleSidebar} aria-label="Toggle menu">
@@ -52,7 +83,7 @@ export default function Navbar() {
                 {item.dropdown && <ChevronDown className="inline-block h-4 w-4 ml-1" />}
               </Link>
               {item.dropdown && (
-                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block">
+                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block z-50">
                   {item.dropdown.map((subItem, subIndex) => (
                     <Link key={subIndex} href={subItem.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                       {subItem.name}
@@ -79,13 +110,19 @@ export default function Navbar() {
         <nav className="p-4 space-y-4">
           {navItems.map((item, index) => (
             <div key={index}>
-              <Link href={item.href} className="block hover:text-blue-200 transition duration-300">
-                {item.name}
-              </Link>
-              {item.dropdown && (
+              <button 
+                onClick={() => item.dropdown ? toggleExpanded(item.name) : null}
+                className="flex items-center justify-between w-full text-left hover:text-blue-200 transition duration-300"
+              >
+                <Link href={item.href} onClick={toggleSidebar} className="block">
+                  {item.name}
+                </Link>
+                {item.dropdown && <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${expandedItems.includes(item.name) ? 'rotate-180' : ''}`} />}
+              </button>
+              {item.dropdown && expandedItems.includes(item.name) && (
                 <div className="pl-4 mt-2 space-y-2">
                   {item.dropdown.map((subItem, subIndex) => (
-                    <Link key={subIndex} href={subItem.href} className="block text-sm hover:text-blue-200 transition duration-300">
+                    <Link key={subIndex} href={subItem.href} onClick={toggleSidebar} className="block text-sm hover:text-blue-200 transition duration-300">
                       {subItem.name}
                     </Link>
                   ))}
