@@ -41,10 +41,10 @@ export default function AboutUs() {
   }
 
   const gridItems = [
-    { type: 'image', src: '/images/neet-study.jpeg', alt: 'NEET student studying', className: 'col-span-2 row-span-2' },
-    { type: 'image', src: '/images/neet-lab.jpg', alt: 'NEET laboratory session', className: 'col-span-1 row-span-1' },
-    { type: 'image', src: '/images/neet-classroom.jpg', alt: 'NEET classroom', className: 'col-span-1 row-span-1' },
-    { type: 'image', src: '/images/neet-success.jpg', alt: 'Successful NEET students', className: 'col-span-2 row-span-1' },
+    { type: 'image', src: '/images/neet-lab.jpeg', alt: 'NEET student studying', className: 'col-span-2 row-span-2' },
+    { type: 'image', src: '/images/neet-study.jpeg', alt: 'NEET laboratory session', className: 'col-span-1 row-span-1' },
+    { type: 'image', src: '/images/neet-classroom.jpeg', alt: 'NEET classroom', className: 'col-span-1 row-span-1' },
+    { type: 'image', src: '/images/neet-preparation.jpg', alt: 'Successful NEET students', className: 'col-span-2 row-span-1' },
   ]
 
   return (
@@ -112,12 +112,12 @@ export default function AboutUs() {
                 <span>Personalized mentoring and performance tracking</span>
               </li>
             </motion.ul>
-            {/* <motion.p variants={itemVariants} className="text-lg">
+            <motion.p variants={itemVariants} className="text-lg">
               Our proven methodology and dedicated team of educators have helped thousands of students achieve their goals. We focus not just on exam preparation, but on building a strong foundation in medical sciences that will serve you throughout your career.
             </motion.p>
             <motion.p variants={itemVariants} className="text-lg">
-              Join us at NEET Coaching Excellence and take the first step towards your successful medical career. Our supportive community and state-of-the-art resources are here to guide you every step of the way.
-            </motion.p> */}
+              Join us at NEET Coaching Excellence and take the first step towards your successful medical career.
+            </motion.p>
             <motion.div variants={itemVariants}>
               <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 inline-flex items-center">
                 Learn More About Our Program
