@@ -7,42 +7,42 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const mentors = [
   {
     name: "Dr. Rina Sharma",
-    photo: "/placeholder.svg?height=200&width=200",
+    photo: "/images/teacher_img.avif?height=200&width=200",
     expertise: "Biology Expert",
     qualifications: "M.Sc. in Biology, 10+ years exp.",
     bio: "Specializes in making complex biology concepts easy to understand and apply."
   },
   {
     name: "Mr. Amit Kumar",
-    photo: "/placeholder.svg?height=200&width=200",
+    photo: "/images/teacher_img.avif?height=200&width=200",
     expertise: "Physics Guru",
     qualifications: "B.Tech, 8+ years exp.",
     bio: "Builds strong foundational knowledge and problem-solving techniques."
   },
   {
     name: "Dr. Priya Patel",
-    photo: "/placeholder.svg?height=200&width=200",
+    photo: "/images/teacher_img.avif?height=200&width=200",
     expertise: "Chemistry Specialist",
     qualifications: "Ph.D. in Chemistry, 12+ years exp.",
     bio: "Known for innovative teaching methods that make chemistry engaging."
   },
   {
     name: "Prof. Rajesh Gupta",
-    photo: "/placeholder.svg?height=200&width=200",
+    photo: "/images/teacher_img.avif?height=200&width=200",
     expertise: "Mathematics Wizard",
     qualifications: "M.Sc. in Mathematics, 15+ years exp.",
     bio: "Transforms complex math problems into simple, solvable steps."
   },
   {
     name: "Dr. Anita Desai",
-    photo: "/placeholder.svg?height=200&width=200",
+    photo: "/images/teacher_img.avif?height=200&width=200",
     expertise: "Biology Specialist",
     qualifications: "Ph.D. in Microbiology, 8+ years exp.",
     bio: "Passionate about making biology relatable to everyday life for students."
   },
   {
     name: "Mr. Vikram Singh",
-    photo: "/placeholder.svg?height=200&width=200",
+    photo: "/images/teacher_img.avif?height=200&width=200",
     expertise: "Chemistry Expert",
     qualifications: "M.Sc. in Organic Chemistry, 12+ years exp.",
     bio: "Skilled at breaking down complex chemical concepts into manageable parts."
