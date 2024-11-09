@@ -7,17 +7,17 @@ import { Button } from '@/components/ui/button'
 
 const slides = [
   {
-    image: '/images/hero/neet-preparation.jpg',
+    image: '/images/neet-lab.jpeg',
     heading: 'Your Journey to NEET Success Starts Here',
     subheading: 'Prepare with the best resources, mentors, and a community of motivated learners.',
   },
   {
-    image: '/images/study-materials.jpg',
+    image: '/images/hero/corosel1.jpeg',
     heading: 'Comprehensive Study Materials',
     subheading: 'Access top-notch resources tailored for NEET success.',
   },
   {
-    image: '/images/expert-mentors.jpg',
+    image: '/images/hero/neet-preparation.jpg',
     heading: 'Learn from Expert Mentors',
     subheading: 'Get guidance from experienced professionals in the medical field.',
   },
@@ -40,7 +40,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden">
+    <section className="relative h-[90vh] lg:h-[60vh] w-full overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
