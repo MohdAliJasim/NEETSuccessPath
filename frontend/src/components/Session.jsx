@@ -40,7 +40,7 @@ export default function LearningResources() {
   }
 
   return (
-    <section ref={ref} className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8" id='session'>
+    <section ref={ref} className="bg-gray-50 py-12 pt-24 px-4 sm:px-6 lg:px-8" id='session'>
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
