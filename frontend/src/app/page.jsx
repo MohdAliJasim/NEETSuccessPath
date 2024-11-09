@@ -4,8 +4,8 @@ import AboutUs from "../components/AboutUs.jsx"
 import WhyUS from "../components/WhyUs.jsx"
 import Session from "../components/Session.jsx"
 import Mentor from "../components/Mentor.jsx"
-
 import Footer from "../components/Footer.jsx"
+import TestimonialCarousel from "@/components/Testimonial.jsx"
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
     <WhyUS/>
     <Session/>
     <Mentor/>
-   
+    <TestimonialCarousel/>
     <Footer/>
   </>
   );

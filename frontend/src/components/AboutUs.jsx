@@ -41,7 +41,7 @@ export default function AboutUs() {
   }
 
   const gridItems = [
-    { type: 'image', src: '/images/neet-study.jpg', alt: 'NEET student studying', className: 'col-span-2 row-span-2' },
+    { type: 'image', src: '/images/neet-study.jpeg', alt: 'NEET student studying', className: 'col-span-2 row-span-2' },
     { type: 'image', src: '/images/neet-lab.jpg', alt: 'NEET laboratory session', className: 'col-span-1 row-span-1' },
     { type: 'image', src: '/images/neet-classroom.jpg', alt: 'NEET classroom', className: 'col-span-1 row-span-1' },
     { type: 'image', src: '/images/neet-success.jpg', alt: 'Successful NEET students', className: 'col-span-2 row-span-1' },
