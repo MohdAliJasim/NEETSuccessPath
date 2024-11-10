@@ -16,7 +16,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {['Home', 'About Us', 'Learning Resources', 'Contact Us', 'Terms & Privacy'].map((item) => (
                 <li key={item}>
-                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-[#00A896] transition-colors duration-300">
+                  <Link href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-[#00A896] transition-colors duration-300">
                     {item}
                   </Link>
                 </li>
