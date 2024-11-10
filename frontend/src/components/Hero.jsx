@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 
 const slides = [
   {
-    image: '/images/neet-lab.jpeg',
+    image: '/images/hero/neet-preparation.jpg',
     heading: 'Your Journey to NEET Success Starts Here',
     subheading: 'Prepare with the best resources, mentors, and a community of motivated learners.',
   },
@@ -40,7 +40,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="lg:mt-32 relative h-[80vh] lg:h-[65vh] w-full overflow-hidden" id='hero'>
+    <section className="relative  h-[80vh] lg:h-[calc(80vh-80px)] w-full overflow-hidden" id="hero">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -55,11 +55,14 @@ export default function Hero() {
             objectFit="cover"
             priority
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black to-gray-300 opacity-80" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
             <h1 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl">{slide.heading}</h1>
             <p className="mb-8 max-w-2xl text-xl md:text-2xl">{slide.subheading}</p>
-            <Button size="lg" className="text-lg">
+            <Button 
+              size="lg" 
+              className="text-lg bg-[#FFC300] text-[#4A0E4E] hover:bg-[#00A896] hover:text-white transition duration-300"
+            >
               Start Your Preparation Today
             </Button>
           </div>
@@ -68,19 +71,19 @@ export default function Hero() {
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/50 text-black hover:bg-white/75"
+        className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/20 text-white hover:bg-white/40 hover:text-[#4A0E4E] transition duration-300"
         onClick={prevSlide}
       >
-        <ChevronLeft className="h-4 w-4" />
+        <ChevronLeft className="h-6 w-6" />
         <span className="sr-only">Previous slide</span>
       </Button>
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/50 text-black hover:bg-white/75"
+        className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/20 text-white hover:bg-white/40 hover:text-[#4A0E4E] transition duration-300"
         onClick={nextSlide}
       >
-        <ChevronRight className="h-4 w-4" />
+        <ChevronRight className="h-6 w-6" />
         <span className="sr-only">Next slide</span>
       </Button>
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 transform space-x-2">
@@ -90,8 +93,8 @@ export default function Hero() {
             variant="outline"
             size="sm"
             className={`h-3 w-3 rounded-full p-0 ${
-              index === currentSlide ? 'bg-white' : 'bg-white/50'
-            }`}
+              index === currentSlide ? 'bg-[#FFC300]' : 'bg-white/50'
+            } hover:bg-[#00A896] transition duration-300`}
             onClick={() => setCurrentSlide(index)}
           >
             <span className="sr-only">Go to slide {index + 1}</span>
