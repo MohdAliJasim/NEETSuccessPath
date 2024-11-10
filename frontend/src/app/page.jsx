@@ -1,12 +1,14 @@
-import Hero from "../components/Hero.jsx"
+
 import Navbar from "../components/Navbar.jsx"
 import AboutUs from "../components/AboutUs.jsx"
 import WhyUS from "../components/WhyUs.jsx"
-import Footer from "../components/Footer.jsx"
+
 import TestimonialCarousel from "@/components/Testimonial.jsx"
 import MentorCarousel from "../components/Mentor.jsx"
 import LearningResources from "../components/Session.jsx"
 import Testing from "../components/Testing.jsx"
+import Hero from "@/components/Hero2.jsx"
+import Footer from "@/components/Footer.jsx"
 export default function Home() {
   return (
   <>
@@ -14,11 +16,12 @@ export default function Home() {
     <Hero/>
     <AboutUs/>
     <WhyUS/>
-    <LearningResources/>
+    {/* <LearningResources/> */}
+    <Testing/>
     <MentorCarousel/>
     <TestimonialCarousel/>
     <Footer/>
-    <Testing/>
+    
   </>
   );
 }
