@@ -119,7 +119,7 @@ export default function AboutUs() {
               Join us at NEET Coaching Excellence and take the first step towards your successful medical career.
             </motion.p>
             <motion.div variants={itemVariants}>
-              <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 inline-flex items-center">
+              <button className="self-start px-6 py-3 bg-[#FFC300] text-[#4A0E4E] rounded-lg hover:bg-[#00A896] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#FFC300] focus:ring-opacity-50 font-semibold inline-flex items-center">
                 Learn More About Our Program
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>

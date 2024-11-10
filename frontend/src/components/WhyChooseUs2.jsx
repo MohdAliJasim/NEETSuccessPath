@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
   ]
 
   return (
-    <section className="py-24 bg-[#4A0E4E] text-white" id="whychooseus">
+    <section className="py-24 bg-[#4A0E4E]  text-white" id="whychooseus">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
