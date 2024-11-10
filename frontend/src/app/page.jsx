@@ -17,7 +17,7 @@ export default function Home() {
     <Hero/>
     <AboutUs/>
     <WhyChooseUs/>
-    <WhyUS/>
+    {/* <WhyUS/> */}
     {/* <LearningResources/> */}
     <Testing/>
     <MentorCarousel/>

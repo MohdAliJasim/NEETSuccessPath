@@ -111,7 +111,7 @@ export default function WhyChooseUs() {
             className="md:col-span-2 bg-[#E3F2FD] text-[#4A0E4E] p-6 rounded-lg shadow-lg flex flex-col justify-center"
           >
             <p className="text-lg mb-6">
-              At NEET Coaching Excellence, we're committed to your success. Our comprehensive approach ensures you're well-prepared for NEET and your future medical career.
+              At NEET Coaching Excellence, we&apos;re committed to your success. Our comprehensive approach ensures you&apos;re well-prepared for NEET and your future medical career.
             </p>
             <button className="self-start px-6 py-3 bg-[#FFC300] text-[#4A0E4E] rounded-lg hover:bg-[#00A896] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#FFC300] focus:ring-opacity-50 font-semibold">
               Start Your NEET Journey
