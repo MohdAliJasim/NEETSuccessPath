@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const mentors = [
   {
     name: "Dr. Rina Sharma",
-    photo: "/images/teacher_img.avif?height=200&width=200",
+    photo: "/images/teacher2.jpg?height=200&width=200",
     expertise: "Biology Expert",
     qualifications: "M.Sc. in Biology, 10+ years exp.",
     bio: "Specializes in making complex biology concepts easy to understand and apply."
@@ -21,28 +21,28 @@ const mentors = [
   },
   {
     name: "Dr. Priya Patel",
-    photo: "/images/teacher_img.avif?height=200&width=200",
+    photo: "/images/teacher3.jpg?height=200&width=200",
     expertise: "Chemistry Specialist",
     qualifications: "Ph.D. in Chemistry, 12+ years exp.",
     bio: "Known for innovative teaching methods that make chemistry engaging."
   },
   {
     name: "Prof. Rajesh Gupta",
-    photo: "/images/teacher_img.avif?height=200&width=200",
+    photo: "/images/teacher4.jpg?height=200&width=200",
     expertise: "Mathematics Wizard",
     qualifications: "M.Sc. in Mathematics, 15+ years exp.",
     bio: "Transforms complex math problems into simple, solvable steps."
   },
   {
     name: "Dr. Anita Desai",
-    photo: "/images/teacher_img.avif?height=200&width=200",
+    photo: "/images/teacher6.jpg?height=200&width=200",
     expertise: "Biology Specialist",
     qualifications: "Ph.D. in Microbiology, 8+ years exp.",
     bio: "Passionate about making biology relatable to everyday life for students."
   },
   {
     name: "Mr. Vikram Singh",
-    photo: "/images/teacher_img.avif?height=200&width=200",
+    photo: "/images/teacher5.jpg?height=200&width=200",
     expertise: "Chemistry Expert",
     qualifications: "M.Sc. in Organic Chemistry, 12+ years exp.",
     bio: "Skilled at breaking down complex chemical concepts into manageable parts."
