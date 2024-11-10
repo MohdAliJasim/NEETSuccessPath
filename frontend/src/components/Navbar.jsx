@@ -4,11 +4,13 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronDown, Menu, X } from "lucide-react"
+import { LoginForm } from './LoginForm' // Adjust the import path if needed
 
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [expandedItems, setExpandedItems] = useState([])
   const [openDropdown, setOpenDropdown] = useState(null)
+  const [isLoginOpen, setIsLoginOpen] = useState(false) // New state for login form visibility
   const dropdownRef = useRef(null)
   const timeoutRef = useRef(null)
 
@@ -85,7 +87,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target )) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenDropdown(null)
       }
     }
@@ -141,11 +143,20 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <button className="bg-[#FFC300] text-[#4A0E4E] hover:bg-[#00A896] hover:text-white font-semibold py-2 px-4 rounded transition duration-300">
-           Login
+          <button 
+            className="bg-[#FFC300] text-[#4A0E4E] hover:bg-[#00A896] hover:text-white font-semibold py-2 px-4 rounded transition duration-300"
+            onClick={() => setIsLoginOpen(true)} // Open login form
+          >
+            Login
           </button>
         </nav>
       </div>
+
+      {/* Login Form Popup */}
+      <LoginForm 
+        isOpen={isLoginOpen} 
+        onClose={() => setIsLoginOpen(false)} // Close login form
+      />
 
       {/* Mobile Sidebar */}
       <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-[#4A0E4E] transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:hidden`}>
@@ -178,8 +189,11 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <button className="w-full bg-[#FFC300] text-[#4A0E4E] hover:bg-[#00A896] hover:text-white font-semibold py-2 px-4 rounded transition duration-300">
-           Login
+          <button 
+            className="w-full bg-[#FFC300] text-[#4A0E4E] hover:bg-[#00A896] hover:text-white font-semibold py-2 px-4 rounded transition duration-300"
+            onClick={() => setIsLoginOpen(true)} // Open login form from sidebar
+          >
+            Login
           </button>
         </nav>
       </div>
