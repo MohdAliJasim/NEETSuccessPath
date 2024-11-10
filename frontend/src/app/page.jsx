@@ -9,12 +9,14 @@ import LearningResources from "../components/Session.jsx"
 import Testing from "../components/Testing.jsx"
 import Hero from "@/components/Hero2.jsx"
 import Footer from "@/components/Footer.jsx"
+import WhyChooseUs from "@/components/WhyChooseUs2.jsx"
 export default function Home() {
   return (
   <>
     <Navbar/>
     <Hero/>
     <AboutUs/>
+    <WhyChooseUs/>
     <WhyUS/>
     {/* <LearningResources/> */}
     <Testing/>
