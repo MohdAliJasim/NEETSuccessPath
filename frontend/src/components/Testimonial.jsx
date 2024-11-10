@@ -51,7 +51,7 @@ export default function TestimonialCarousel() {
   }
 
   return (
-    <div className="bg-gray-100 py-12 pt-24 px-4 sm:px-6 lg:px-8" id='testimonial'>
+    <div className="bg-[#E3F2FD] py-12 pt-24 px-4 sm:px-6 lg:px-8" id='testimonial'>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-12">
           What Our Students Say
@@ -61,8 +61,8 @@ export default function TestimonialCarousel() {
             {getVisibleTestimonials().map((testimonial, index) => (
               <div key={index} className={`bg-white rounded-lg shadow-md overflow-hidden ${index >= 1 ? 'hidden md:block' : ''} ${index >= 2 ? 'md:hidden lg:block' : ''}`}>
                 <div className="p-6 relative">
-                  <Quote className="absolute top-4 left-4 w-8 h-8 text-primary opacity-20" />
-                  <blockquote className="mt-4 text-lg text-gray-700 italic">
+                  <Quote className="absolute top-4 left-4 w-8 h-8 pb-3 text-primary opacity-20" />
+                  <blockquote className="mt-4  text-lg text-gray-700 italic">
                     {testimonial.quote}
                   </blockquote>
                   <div className="mt-4 flex items-center">
