@@ -50,15 +50,15 @@ export default function Navbar() {
       name: 'Learning Sessions', 
       href: '#session',
       dropdown: [
-        { name: 'Live Classes', href: '/live-classes' },
-        { name: 'Recorded Sessions', href: '/recorded-sessions' },
-        { name: 'Study Materials', href: '/study-materials' },
+        { name: 'Live Classes', href: '/' },
+        { name: 'Recorded Sessions', href: '/' },
+        { name: 'Study Materials', href: '/' },
       ]
     },
     { name: 'Mentors', href: '#mentor' },
-    { name: 'Doubt Clearing', href: '/doubt-clearing' },
+    { name: 'Doubt Clearing', href: '/' },
     { name: 'Testimonials', href: '#testimonial' },
-    { name: 'Contact Us', href: '/contact' },
+    { name: 'Contact Us', href: '/' },
   ]
 
   useEffect(() => {

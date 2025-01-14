@@ -41,7 +41,7 @@ export default function QuantumLeapTheme() {
     const isInView = useInView(ref, { once: true, amount: 0.2 })
   
     return (
-      <section ref={ref} className="bg-[#E3F2FD] py-16 px-4 sm:px-6 lg:px-8">
+      <section ref={ref} className="pt-24 bg-[#E3F2FD] py-16 px-4 sm:px-6 lg:px-8" id='session'>
         <div className="max-w-7xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}

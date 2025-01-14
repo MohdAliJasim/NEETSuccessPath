@@ -71,7 +71,7 @@ export default function QuantumLeapMentorCarousel() {
   }
 
   return (
-    <div className="bg-[#E3F2FD] py-16 px-4 sm:px-6 lg:px-8" id='mentor'>
+    <div className="bg-[#E3F2FD] py-16 pt-24 px-4 sm:px-6 lg:px-8" id='mentor'>
       <motion.div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
