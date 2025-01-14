@@ -52,8 +52,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-white/10 text-center">
-          <p className="text-sm">&copy; 2024 NEET Success Path. All rights reserved.</p>
+        <div className="flex justify-center mt-8 pt-8 border-t border-white/10 text-center">
+          <p className="text-sm">&copy; 2024 NEET Success Path. All Rights Reserved By Integral University.</p>
+          <p>Designed & Developed By: INTACT Lab Department of CSE, Integral University, INDIA</p>
         </div>
       </div>
     </footer>
