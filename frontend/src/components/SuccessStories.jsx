@@ -20,9 +20,9 @@ const SuccessStories = () => {
           <div className="flex flex-col bg-white rounded-xl">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-gray-800">
-                " With Preline, we're able to easily track our performance in
-                full detail. It's become an essential tool for us to grow and
-                engage with our audience. "
+                &quot; With Preline, we&apos;re able to easily track our performance in
+                full detail. It&apos;s become an essential tool for us to grow and
+                engage with our audience. &quot;
               </p>
             </div>
             <div className="p-4 bg-gray-100 rounded-b-xl md:px-7">
@@ -52,9 +52,9 @@ const SuccessStories = () => {
           <div className="flex flex-col bg-white rounded-xl">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-gray-800">
-                " In September, I will be using this theme for 2 years. I went
-                through multiple updates and changes and I'm very glad to see
-                the consistency and effort made by the team. "
+                &quot; In September, I will be using this theme for 2 years. I went
+                through multiple updates and changes and I&apos;m very glad to see
+                the consistency and effort made by the team. &quot;
               </p>
             </div>
             <div className="p-4 bg-gray-100 rounded-b-xl md:px-7">
@@ -84,9 +84,9 @@ const SuccessStories = () => {
           <div className="flex flex-col bg-white rounded-xl">
             <div className="flex-auto p-4 md:p-6">
               <p className="text-base italic md:text-lg text-gray-800">
-                " Refreshing and Thought provoking design and it changes my view
+                &quot; Refreshing and Thought provoking design and it changes my view
                 about how I design the websites. Great typography, modern clean
-                white design, nice tones of the color. "
+                white design, nice tones of the color. &quot;
               </p>
             </div>
             <div className="p-4 bg-gray-100 rounded-b-xl md:px-7">
