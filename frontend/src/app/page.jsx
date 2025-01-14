@@ -18,8 +18,8 @@ export default function Home() {
   return (
   <>
     <Navbar/>
-    <ResultsPopup/>
-    <Hero3/>
+    {/* <ResultsPopup/> */}
+    {/* <Hero3/> */}
     <Hero/>
     <AboutUs/>
     <WhyChooseUs/>
@@ -29,7 +29,7 @@ export default function Home() {
     <MentorCarousel/>
     <TestimonialCarousel/>
 
-    <SuccessStories/>
+    {/* <SuccessStories/> */}
     <Footer/>
     
   </>
